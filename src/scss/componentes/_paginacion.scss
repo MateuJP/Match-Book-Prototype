@@ -1,0 +1,38 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.navegacionPaginacion{
+    .pagination{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        margin-left: 45rem;
+        margin-top: 2.5rem;
+
+        .page-item{
+            
+            display: inline;
+            a{ 
+                background-color: v.$blanco;
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none; 
+                border-right: 1px solid (v.$negro);
+                
+                &:hover {
+                    background-color: darken( v.$blanco, 10% );
+                    cursor: pointer;
+                }
+
+                
+            }
+            
+
+        }
+        
+    }
+    .ocultar{
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+
+.lista{
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem
+}
+.contenido-lista{
+
+    @include m.grid(2,1fr);
+    @include m.tablet{
+        @include m.grid(3,1fr);
+        margin-left: 0.5rem;
+        
+    }
+
+    .libroB,.eliminar-libro{
+        width: 75%;
+        background-color: v.$azul;
+        margin-bottom: 3rem;
+
+        .texto{
+            font-weight: v.$bold;
+            text-transform: uppercase;
+        }
+        span{
+            font-weight:100;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+    }
+
+}
+
+.boton-eliminar{
+    @include m.boton(v.$rojo,v.$blanco);
+}
+.ocultar{
+    display: none;
+}

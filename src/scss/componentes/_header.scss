@@ -1,0 +1,23 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.imagen-header{
+    height: 20rem;
+    background-image: url('/build/img/Fondo1.jpg');
+    background-size:cover;
+    background-position: center;
+    @include m.tablet{
+        height: 60rem;
+        background-size:100%;
+        
+    }
+}
+.barra{
+    display: flex;
+    margin-left: 2rem;
+    a{
+        font-size: 3rem;
+        color: v.$blanco;
+        font-weight: v.$bold;
+    }
+}

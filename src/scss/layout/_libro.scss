@@ -1,0 +1,48 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+.contenido-ver{
+    display: block;
+    align-items: center;
+}
+.lista{
+    display: grid;
+    justify-content: center;
+    margin-left: -2.5rem;
+    p{
+        font-weight: v.$bold;
+    }
+    span{
+        font-weight: 100;
+    }
+   
+}
+.select-categoria{
+    margin-left: -44%;
+}
+.libro{
+    display: grid;
+    justify-content: center;
+    p{
+        font-weight: v.$bold;
+    }
+    span{
+        font-weight: 100;
+    }
+}
+.t-contact{
+    margin-left: 0rem;
+
+    margin-top: 10rem;
+
+}
+.contacto{
+    margin-left: 0rem;
+    margin-top: -1rem;
+    display: block;
+    a{
+        padding-left: 1rem;
+    }
+    img{
+        height: 5rem;
+    }
+}

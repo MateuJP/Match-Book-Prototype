@@ -1,0 +1,1 @@
+function iniciarApp(){seleccionarLibro()}function seleccionarLibro(){document.querySelectorAll("#libro").forEach(n=>{n.addEventListener("click",(function(i){const e=n.attributes.value.value;window.location="/libros/ver"+e}))})}document.addEventListener("DOMContentLoaded",(function(n){iniciarApp()}));

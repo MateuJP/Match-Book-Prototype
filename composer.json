@@ -1,0 +1,20 @@
+{
+    "name": "mateujoanperello/mbook",
+    "description": "Proyecto Match Book",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateu JP"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
+}

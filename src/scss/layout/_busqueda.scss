@@ -1,0 +1,24 @@
+@use 'base/variables'as v;
+@use  'base/mixins' as m;
+
+.resultadoBusqueda{
+    margin-top: 5rem;
+    @include m.tablet{
+        @include m.grid(3,2fr);
+    }
+}
+.resultado{
+    margin-bottom: 2rem;
+    border-left: 2px solid v.$azul;
+    border-right: 2px solid v.$azul;
+    border-top: 2px solid v.$azul;
+    border-bottom: 2px solid v.$azul;
+
+    margin-left:auto ;
+    margin-right: auto;
+    text-align: center;
+    width: 50rem;
+    a{
+        margin-bottom: 0rem;
+    }
+}

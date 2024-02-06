@@ -1,0 +1,217 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.contenedor-cuenta{
+    display: grid;
+    max-width:auto;
+    max-height: auto;
+
+    @include m.tablet{
+        @include m.grid(3,1fr);
+        width: 100%;
+        height: 40rem;
+    }
+}
+
+.menu-Izquierda{
+    display: grid;
+    justify-content: center;
+
+    @include m.tablet{
+        display: grid;
+        justify-content: left;
+    }
+
+    .contenido-Izquierda{
+        width: 80%;
+        padding: 1rem;
+        @include m.tablet{
+            //width: 150%;
+            //height: 60%;
+            margin-top: 5rem;
+            margin-left: 8rem;
+        }
+    
+        a{
+            color: v.$blanco;
+            font-weight: v.$bold;
+        }
+        img{
+            
+            height: 2.5rem;
+            background-color: none;
+        }
+        border-top: 1.5px solid v.$azul;
+        border-bottom: 1.5px solid v.$azul;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            background-color: darken(v.$gris,10%);
+        }
+    }
+}
+
+
+.buscador{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color:v.$gris;
+    width:60rem ;
+    h1{
+        color: v.$negro;
+        font-weight: v.$bold;
+    }
+   
+    @include m.tablet{
+        margin-top: 5rem;
+
+        display: grid;
+        justify-content: center;
+        background-color: v.$gris;
+        width: 110%;
+    }
+    .opcion-busqueda{
+
+        @include m.tablet{
+            margin-top: -15rem;
+            padding: 1rem;
+        }
+        input{
+            width: auto;
+        }
+
+        label{
+            color: v.$negro;
+            font-weight: v.$bold;
+
+        }
+    }
+}
+
+.busquedaMatch{
+    height: 15rem;
+
+    margin-top: -10rem;
+    display: inline;
+    .campoBuscar{
+        margin-left: 1rem;
+        margin-top: 0rem;
+        padding: 0.5rem;
+        display: grid;
+
+    }
+    .boton{
+        margin-left: 1.4rem;
+    }
+
+   
+}
+
+.busquedatitulo{
+    height: 20rem;
+    margin-top: -12rem;
+    display: inline;
+    width: 25rem;
+    .campoTitulo{
+        margin-top: 0.5rem;
+        padding: 0.3rem;
+
+        label{
+            color: v.$negro;
+            font-weight: v.$bold;
+        }
+        select{
+            margin-left: 0rem;
+        }
+       
+
+    }
+    .campoBuscar{
+        height: -2.5rem;
+        margin-top: -2.5rem;
+        padding: 0.5rem;
+        display: grid;
+    }
+    .boton{
+        margin-left: -0rem;
+    }
+
+}
+.ocultar{
+    display: none;
+}
+
+
+.menu-derecha{
+    display: flex;
+    justify-content: space-around;
+    @include m.tablet{
+        display: grid;
+        justify-content: right;
+        margin-top: 5rem;
+        margin-right: 10rem;
+    }
+
+    .lista{
+        width: 16rem;
+        height: 16rem;
+        margin: 1rem;
+        border-top: 1.5px solid v.$azul;
+        border-left: 1.5px solid v.$azul;
+        border-right: 1.5px solid v.$azul;
+        border-bottom: 1.5px solid v.$azul;
+        display: grid;
+        justify-content: center;
+        @include m.tablet{
+            margin-bottom: 1rem;
+            margin: 0rem;
+        }
+        .titulo-lista{
+            height: 3rem;
+            margin-right: 15rem;
+
+            h3{
+                margin-left: 15rem;
+                color: v.$blanco;
+                font-weight: v.$bold;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+    
+            }
+
+        }
+       
+        p{
+            text-align: center;
+            font-size: 1rem;
+            color: v.$blanco;
+        }
+
+        &:hover{
+            cursor: pointer;
+            background-color: v.$azul;
+            transform: scale(1.1);
+        }
+
+        .contenido-derecha{
+            display: flex;
+            width: 15rem;
+            margin-left: 3rem;
+            span{
+                margin-top: -1rem;
+                margin-left: 12rem;
+
+                color: v.$blanco;
+                font-weight: v.$bold;
+                font-size: 1.5rem;
+            
+            }
+            p{
+                color: v.$blanco;
+                font-weight: v.$bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

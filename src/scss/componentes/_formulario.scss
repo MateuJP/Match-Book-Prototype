@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario{
+
+    background-color: v.$gris;
+    max-width:100%;
+
+
+    @include m.tablet{
+        width: 50%;
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    
+    .label-desplegable,select{
+        margin-left: -15rem;
+    }
+    
+    .label-categoria{
+        margin-left: -11rem;
+        select{
+            margin-left: -5rem;
+
+        }
+        
+    }
+}
+.campo-categoria{
+    margin-top: 3rem;
+    margin-left: 35.5rem;
+    margin-bottom: 1rem;
+}
+.campo-provincia{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 14rem;
+}

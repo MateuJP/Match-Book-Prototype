@@ -1,0 +1,21 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.boton{
+    @include m.boton(v.$azul,v.$blanco);
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton-login{
+    @include m.boton(v.$azul,v.$blanco);
+    margin-left: 3rem;
+    margin-top: 1rem;
+
+
+}
+.boton-crear{
+    @include m.boton(v.$azul,v.$blanco);
+    margin-left:auto;
+    margin-right: auto;
+}

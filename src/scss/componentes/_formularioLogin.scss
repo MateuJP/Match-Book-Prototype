@@ -1,0 +1,66 @@
+@use 'base/mixins'as m;
+@use 'base/variables'as v;
+
+.contenido-formulario{
+    display: block;
+    background-color: v.$gris;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.campo-login{
+   
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5rem;
+        margin-top: 1rem;
+        padding: 2.5rem;    
+        @include m.tablet{
+            display: grid;
+            margin: 1em;
+            margin-top: 0.5rem;
+            padding: 1.5rem;
+        }
+  
+
+    label{
+        padding: 1rem 0rem 1rem 0rem;
+        color: v.$negro;
+        font-weight: v.$bold;
+    }
+   input{
+    width: 100%;
+   }
+}
+.campo{
+   
+    display: grid;
+    justify-content: center;
+    padding: 1.5rem;    
+    @include m.tablet{
+        display: grid;
+        margin: -2rem;
+}
+
+
+    label{
+        padding: 1rem 0rem 1rem 0rem;
+        color: v.$negro;
+        font-weight: v.$bold;
+    }
+    input{
+        width: 100%;
+    }
+
+}
+.campo-desplegable{
+    display: grid;
+    justify-content: center;
+    margin-left: -15rem;
+
+    label{
+        padding: 1rem 0rem 1rem 0rem;
+        color: v.$negro;
+        font-weight: v.$bold;
+    }
+   
+}
